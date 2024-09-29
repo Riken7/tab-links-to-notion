@@ -1,0 +1,14 @@
+{
+  "manifest_version" : 2,
+  "name" : "My Extension",
+  "version" : "1.0",
+  "description" : "Summarize ultiple tabs into notion doc",
+  "permissions" : ["tabs", "activeTab", "https://api.notion.com/*"],
+  "browser_action" : {
+    "default_popup" : "popup.html",
+    "default_icon" : "logo.png"
+  },
+  "background" : {
+    "scripts" : ["background.js"]
+  }
+}
