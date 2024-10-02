@@ -32,7 +32,7 @@ async function createNotionPage(tabLinks, pageName) {
       content.push({
         type: "paragraph",
         paragraph: {
-          rich_text: [{ type: "text", text: { content: link } }],
+          rich_text: [{ type: "text", text: { content: link, link: {url : link }, } }],
         },
       });
     });
